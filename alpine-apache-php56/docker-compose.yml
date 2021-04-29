@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  app:
+    image: alpine-apache-php56
+    command: sh -c "/usr/sbin/httpd -D FOREGROUND"
+    ports:
+      - 80:80
+    working_dir: /var/www/localhost/htdocs
+    volumes:
+      - ./:/var/www/localhost/htdocs

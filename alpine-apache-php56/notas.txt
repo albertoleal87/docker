@@ -1,0 +1,9 @@
+alpine-apache-php56 
+
+docker build -t alpine-apache-php56 .
+
+docker run -dp 80:80 alpine-apache-php56
+
+48.74 MB
+
+docker-compose up -d
